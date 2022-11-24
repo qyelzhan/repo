@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RegisterForm</title>
+
+    <style>
+        label {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>RegisterForm</h1>
+    <p>Please fill out form values!</p>
+
+    <!--
+        GET
+        POST
+        PUT
+        DELETE
+        PATCH
+    -->
+    <form>
+        <fieldset>
+            <input type="color">
+        </fieldset>
+        <fieldset>
+
+            
+            <input list="holiday-names" id="holiday-choice" name="holiday-choice" />
+            <datalist id="holiday-names">
+                <option value="New Year's Day">
+                <option value="Independence Day">
+                <option value="Halloween">
+                <option value="Thanksgiving">
+                <option value="Christmas Day">
+            </datalist>
+
+        </fieldset>
+        <fieldset>
+            <legend>User Info</legend>
+            <label for="firstname"><input required type="text" id="firstname" name="firstname"> Enter your first name</label>
+            <label for="lastname"><input type="text" id="lastname" name="lastname"> Enter your last name</label>
+            <label for="password"><input type="password" id="password" pattern="" name="password"> Enter your password name</label>
+        </fieldset>
+        <fieldset>
+            <legend>Gender</legend>
+            <label for="male">
+                <input type="radio" name="gender" id="male">
+            </label>
+
+
+            <input type="radio" id="test">
+            <label for="test">Test</label>
+
+
+            <input type="checkbox" checked>
+
+            <label for="female">
+                <input type="radio" id="female" name="gender">
+                Female
+            </label>
+
+
+            <input type="search" accesskey="s">
+            <label>Hint: ctrl + option + s to focus</label>
+        </fieldset>
+        <fieldset>
+            <legend>City</legend>
+            <select name="city" id="">
+                <option value="astana">Astana</option>
+                <option value="almaty">Almaty</option>
+                <option value="taraz">Taraz</option>
+                <option value="shymkent">Shymkent</option>
+            </select>
+        </fieldset>
+        <fieldset>
+
+
+
+            <input type="file">
+            <button>test</button>
+            <button type="submit">Submit</button>
+        </fieldset>
+
+        <fieldset>
+            <input type="text" inputmode="numeric" placeholder="numeric value"/>
+            <input type="text" inputmode="tel" placeholder="tel value"/>
+            <input type="text" inputmode="decimal" placeholder="decimal value"/>
+            <input type="text" inputmode="email" placeholder="email value"/>
+            <input type="text" inputmode="url" placeholder="url value"/>
+            <input type="text" inputmode="search" placeholder="search value"/>
+        </fieldset>
+    </form>
+    <!--
+        firstname: Nurtylek
+        lastname: Koshkar
+        city: Shymkent
+        gender: Male
+        gender: Female
+    -->
+
+</body>
+</html>

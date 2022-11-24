@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+
+    <style>
+      code {
+        background-color: #eee;
+        border-radius: 3px;
+        font-family: courier, monospace;
+        padding: 0 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <div role="dialog" aria-disabled="true">Div Block</div>
+
+    <span>Span</span>
+
+    <span>Span 2</span>
+
+    <nav>
+      <a href="/" aria-current="page">Home</a>
+      <a href="/page2.html">Other page</a>
+    </nav>
+
+    <!-- h1 - h6 -->
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ratione?
+    </p>
+
+    <pre>
+      Lorem, ipsum.
+      Lorem ipsum dolor sit amet, consectetur adipisicing.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, tenetur.
+    </pre>
+
+    <pre>
+      <code>{
+                        name: 'Nico',
+        surname: 'Koshkar'
+      }</code>
+    </pre>
+
+    <main>
+      <picture>
+        <source media="(min-width:650px)" srcset="img_pink_flowers.jpg" />
+        <source media="(min-width:465px)" srcset="img_white_flower.jpg" />
+        <img src="img_orange_flowers.jpg" alt="Flowers" style="width: auto" />
+      </picture>
+
+      <dialog>
+        <h5>Dialog</h5>
+      </dialog>
+
+      <details>
+        <summary>Collapse</summary>
+        <p>
+          Epcot is a theme park at Walt Disney World Resort featuring exciting
+          attractions, international pavilions, award-winning fireworks and
+          seasonal special events.
+        </p>
+      </details>
+
+      <audio src=""></audio>
+
+      <video src=""></video>
+
+      <iframe
+        width="500"
+        height="500"
+        src="https://www.youtube.com/embed/JEqutNmJpR4"
+        title="Tina & Tony 😃 Best episodes about Magic 💗 0+ | Cartoons for Children"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        <mark>Fugiat</mark>, vero.
+      </p>
+
+      <header>
+        <h3>Header</h3>
+      </header>
+
+      <h1>Home page</h1>
+
+      <aside>
+        <h2>SideBar</h2>
+      </aside>
+
+      <section>
+        <h2>Section 1</h2>
+      </section>
+
+      <section>
+        <h2>Section 1</h2>
+      </section>
+
+      <section>
+        <h2>Section 1</h2>
+      </section>
+
+      <article>
+        <h4>Article 1</h4>
+      </article>
+
+      <article>
+        <h4>Article 2</h4>
+      </article>
+
+      <article>
+        <h4>Article 3</h4>
+      </article>
+
+      <footer>
+        <h5>Footer</h5>
+      </footer>
+    </main>
+
+    <!-- <h2>Login Form</h2>
+    <form id="login-form" method="GET">
+      <input type="text" name="username" />
+    </form>
+    <input type="text" name="surname" form="login-form" />
+    <button type="submit" form="login-form">Login</button> -->
+
+    <!-- <table>
+      <thead>
+        <tr>
+          Name
+        </tr>
+        <tr>
+          Surname
+        </tr>
+      </thead>
+      <tbody>
+        <td>Nico</td>
+        <td>Koshkar</td>
+      </tbody>
+      <tfoot>
+        <td>Test</td>
+        <td>Test 2</td>
+      </tfoot>
+    </table> -->
+    <!-- <table>
+      <tr>
+        <th>Company</th>
+        <th>Contact</th>
+        <th>Country</th>
+      </tr>
+      <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+      </tr>
+      <tr>
+        <td>Centro comercial Moctezuma</td>
+        <td>Francisco Chang</td>
+        <td>Mexico</td>
+      </tr>
+      <tr>
+        <td>Ernst Handel</td>
+        <td>Roland Mendel</td>
+        <td>Austria</td>
+      </tr>
+      <tr>
+        <td>Island Trading</td>
+        <td>Helen Bennett</td>
+        <td>UK</td>
+      </tr>
+      <tr>
+        <td>Laughing Bacchus Winecellars</td>
+        <td>Yoshi Tannamuri</td>
+        <td>Canada</td>
+      </tr>
+      <tr>
+        <td>Magazzini Alimentari Riuniti</td>
+        <td>Giovanni Rovelli</td>
+        <td>Italy</td>
+      </tr>
+    </table> -->
+
+    <!-- <ul>
+      <li>first</li>
+      <li>second</li>
+      <li>third</li>
+      <li>fourth</li>
+      <li>fifth</li>
+    </ul>
+    <ul>
+      <li>first</li>
+      <li>second</li>
+      <li>third</li>
+      <li>fourth</li>
+      <li>fifth</li>
+      <li>
+        <ul>
+          <li>list 1</li>
+          <li>list 2</li>
+        </ul>
+      </li>
+    </ul>
+    <ol>
+      <li>first</li>
+      <li>second</li>
+      <li>third</li>
+      <li>fourth</li>
+      <li>fifth</li>
+      <li>
+        <ul>
+          <li>list 1</li>
+          <li>list 2</li>
+        </ul>
+      </li>
+    </ol>
+    <ol type="A">
+      <li>first</li>
+      <li>second</li>
+      <li>third</li>
+      <li>fourth</li>
+      <li>fifth</li>
+    </ol>
+    <ol type="a">
+      <li>first</li>
+      <li>second</li>
+      <li>third</li>
+      <li>fourth</li>
+      <li>fifth</li>
+    </ol>
+    <ol type="I">
+      <li>first</li>
+      <li>second</li>
+      <li>third</li>
+      <li>fourth</li>
+      <li>fifth</li>
+    </ol>
+    <ol type="i">
+      <li>first</li>
+      <li>second</li>
+      <li>third</li>
+      <li>fourth</li>
+      <li>fifth</li>
+    </ol>
+    <dl>
+      <dt>Coffee</dt>
+      <dd>- black hot drink</dd>
+      <dt>Milk</dt>
+      <dd>- white cold drink</dd>
+    </dl> -->
+  </body>
+</html>
+
+<!-- 
+  name: Нуртилек
+-->

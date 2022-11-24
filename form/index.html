@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <main>
+            <h1>CatPhotoApp</h1>
+            <section>
+                <h2>Cat Form</h2>
+                <form action="https://freecatphotoapp.com/submit-cat-photo">
+                    <fieldset>
+                        <!-- ctrl + option + s -->
+
+                        <!--
+                            tips
+                            1. tabIndex
+                            2. accesskey
+                        -->
+                        <legend>Tips</legend>
+                        <input type="text" placeholder="search..." accesskey="s">
+
+                        <input type="text" tabindex="2" placeholder="test 1">
+                        <input type="text" tabindex="1" placeholder="test 2">
+                        <input type="text" tabindex="3" placeholder="test 3">
+
+                        <label for="holiday-choice">Choose Your Favorite Holiday:</label>
+                        <input list="holiday-names" id="holiday-choice" name="holiday-choice" />
+                        
+                        <datalist id="holiday-names">
+                            <option value="New Year's Day">
+                            <option value="Independence Day">
+                            <option value="Halloween">
+                            <option value="Thanksgiving">
+                            <option value="Christmas Day">
+                        </datalist>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Is your cat an indoor or outdoor cat?</legend>
+                        <label>
+                            <input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked>
+                            Indoor
+                        </label>
+                        <label>
+                            <input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor">
+                            Outdoor</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>What's your cat's personality?</legend>
+                        <input id="loving" type="checkbox" name="personality" value="loving" checked tabindex="3"><label for="loving">Loving</label>
+
+                        <input id="lazy" type="checkbox" name="personality" value="lazy" tabindex="1"> <label for="lazy">Lazy</label>
+
+                        <input id="energetic" type="checkbox" name="personality" value="energetic" tabindex="2"> <label for="energetic">Energetic</label>
+
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>more tags</legend>
+                        <select name="country">
+                            <optgroup label="USA">
+                                <option>Alabama</option>
+                                <option>Alaska</option>
+                                <option>Arizona</option>
+                            </optgroup>
+                            <optgroup label="Canada">
+                                <option>Alberta</option>
+                                <option>British Columbia</option>
+                                <option>Manitoba</option>
+                            </optgroup>
+                        </select>
+    
+                        <textarea name="textarea" placeholder="write your long message" id="" cols="30" rows="10"></textarea>
+    
+                        <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+                    </fieldset>
+
+
+                    <fieldset>
+                        <input type="text" inputmode="numeric" placeholder="numeric value"/>
+                        <input type="text" inputmode="tel" placeholder="tel value"/>
+                        <input type="text" inputmode="decimal" placeholder="decimal value"/>
+                        <input type="text" inputmode="email" placeholder="email value"/>
+                        <input type="text" inputmode="url" placeholder="url value"/>
+                        <input type="text" inputmode="search" placeholder="search value"/>
+
+                    </fieldset>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Registration Form</title>
+
+    <style>
+      body {
+        padding: 24px;
+        display: grid;
+        place-content: center;
+      }
+
+      label {
+        display: block;
+        padding-top: 16px;
+      }
+
+      input {
+        width: unset;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <p>Please fill out this form</p>
+    <form method="GET">
+      <label for="search"></label>
+      <input type="search" id="search" name="search" accesskey="s" />
+
+      <fieldset>
+        <input type="text" inputmode="numeric" placeholder="numeric value" />
+        <input type="text" inputmode="tel" placeholder="tel value" />
+        <input type="text" inputmode="decimal" placeholder="decimal value" />
+        <input type="text" inputmode="email" placeholder="email value" />
+        <input type="text" inputmode="url" placeholder="url value" />
+        <input type="text" inputmode="search" placeholder="search value" />
+      </fieldset>
+
+      <!-- 
+            Screen readers
+        -->
+      <fieldset>
+        <legend>User Info</legend>
+        <label for="username">Name</label>
+        <input
+          type="text"
+          id="username"
+          name="name"
+          placeholder="fill out username"
+          tabindex="2"
+        />
+
+        <label for="surname">SurName</label>
+        <input
+          type="text"
+          id="surname"
+          name="surname"
+          required
+          oninvalid="this.setCustomValidity('Text Changed!')"
+        />
+
+        <label for="lastname">LastName</label>
+        <input
+          type="text"
+          id="lastname"
+          name="lastname"
+          value="Koshkar"
+          tabindex="1"
+        />
+      </fieldset>
+
+      <fieldset>
+        <legend>Gender</legend>
+
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" />
+
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Pick ur fav city</legend>
+        <select name="city" multiple>
+          <option value="shym">Shymkent</option>
+          <option value="alm">Almaty</option>
+          <option value="ast">Astana</option>
+          <option value="ura">Uralsk</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Terms & Conditions</legend>
+        <label for="terms">Terms</label>
+        <input type="checkbox" name="terms" id="terms" />
+        <label for="terms">Terms</label>
+        <input type="checkbox" name="terms" id="terms" />
+      </fieldset>
+
+      <fieldset>
+        <label for="email">Email</label>
+        <input type="email" id="email" required name="email" />
+
+        <label for="age">Age</label>
+        <input
+          type="number"
+          id="number"
+          name="age"
+          step="5"
+          min="18"
+          max="120"
+        />
+
+        <label for="color">Pick ur fav color!</label>
+        <input type="color" id="color" name="color" placeholder="color" />
+
+        <label for="range">Range</label>
+        <input type="range" id="range" name="range" />
+
+        <input type="text" />
+      </fieldset>
+
+      <fieldset>
+        <input
+          list="holiday-names"
+          id="holiday-choice"
+          name="holiday-choice"
+          placeholder="pick ur fav holiday"
+        />
+
+        <datalist id="holiday-names">
+          <option value="New Year's Day"> </option>
+          <option value="Independence Day"> </option>
+          <option value="Halloween"> </option>
+          <option value="Thanksgiving"> </option>
+          <option value="Christmas Day"> </option>
+        </datalist>
+
+        <legend>more tags</legend>
+        <select name="country">
+          <optgroup label="USA">
+            <option>Alabama</option>
+            <option>Alaska</option>
+            <option>Arizona</option>
+          </optgroup>
+          <optgroup label="Canada">
+            <option>Alberta</option>
+            <option>British Columbia</option>
+            <option>Manitoba</option>
+          </optgroup>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <label for="text">Multiline Text</label>
+        <textarea name="text" id="text" cols="30" rows="10"></textarea>
+      </fieldset>
+
+      <button type="button">click & retrive user data</button>
+      <button type="reset">Reset</button>
+
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
+
+<!--
+    User
+
+    имя: Нуртилек => name
+    фамилия: Кошкар => surname
+    gender: female
+
+-->
