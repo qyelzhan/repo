@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>registration form </title>
+    <link rel="stylesheet" href="/hw2/css/registration.css">
+
+</head>
+
+<body>
+    <h1>Registration form </h1>
+
+    <form action="join.html" target="_blank">
+        <div class="container">
+            <h1>User information </h1>
+            <label for="firstname">
+                <input required type="text" id="firstname" name="firstname" placeholder="Name"> </label> <br>
+            <label for="lastname">
+                <input type="text" id="lastname" name="lastname" placeholder="Last name"></label><br>
+            <label for="date">
+                <input type="date" id="date" name="date" /> Дата рождения</label><br>
+        </div>
+
+        <div class="container">
+            <h1>Email</h1>
+            <label for="email">
+                <input type="email" name="email" id="email" placeholder="email">
+                <button type="button" class="registerbtn">Ok</button>
+                <input type="password" name="password" id="password" placeholder="password">
+                <button type="button" class="registerbtn">Ok</button>
+            </label>
+        </div>
+
+        <div class="container">
+            <h1>Tel. number</h1>
+            <input type="tel" inputmode="tel" name="tel" id="tel" placeholder="tel. number">
+            <button type="button" class="registerbtn">Ok</button>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+
+        <div class="container">
+            <h1>City</h1>
+            <select class="select-css" name="city">
+                <option value="astana">Astana</option>
+                <option value="almaty">Almaty</option>
+                <option value="taraz">Taraz</option>
+                <option value="taldykorgan">Taldykorgan</option>
+                <option value="shymkent">Shymkent</option>
+                <option value="aktau">Aktau</option>
+                <option value="oral">Oral</option>
+                <option value="Semei">Semei</option>
+            </select>
+        </div>
+
+
+
+        <div class="container">
+            <h1>Расскажите о себе.<h1>
+                <textarea name="textarea" id="textareaid" cols="70" rows="10"></textarea>
+                <button type="button" class="registerbtn">Ok</button>
+        </div>
+
+        <div class="container">
+            <h1>Ваши интересы</h1>
+            <textarea name="textarea" id="textareaid" cols="70" rows="10"></textarea>
+            <button type="button" class="registerbtn">Ok</button>
+        </div>
+
+     
+
+
+        <button type="submit" class="registerbtn2">Отправить</button>
+
+
+    </form> 
+</body>
+</html>

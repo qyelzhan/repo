@@ -1,0 +1,101 @@
+body{   
+
+    box-sizing: border-box;     
+        padding-top: 1.2%;
+        padding-bottom: 1%;
+        background-image: url(https://img2.akspic.ru/crops/6/4/6/2/5/152646/152646-kosmos-raketa-astronavt-kosmicheskij_polet-kosmicheskij_chelnok-3840x2160.png);
+        background-repeat: no-repeat;
+       
+      
+    }
+    .fixed-header{
+        
+        width: 100%;
+        position: fixed;        
+        background: #333;
+        padding: 10px 0;
+        color: #fff;
+    }
+ .fixed-footer{
+        width: 100%;
+        background: #333;
+        padding: 10px 0;
+        color: #fff;
+    }
+    .fixed-header{
+        top: 0;
+    }
+    .fixed-footer{
+        margin-top: 400px;
+        bottom: 0;
+    }
+  
+    nav a{
+        color: rgb(248, 245, 245);
+        text-decoration: none;
+        padding: 10px 50px;
+        display: inline-block;
+    }
+    /* стили тейбла ниже---------------------------------------------------------- */ 
+    table {
+        margin-top: 5%;
+        /* background-color: #fff; */
+        font-family: arial, sans-serif;
+        /* border-collapse: collapse; */
+        border-collapse: separate;
+        width: 100%;
+      -webkit-box-shadow: 0px 0px 50px rgba(0, 0, 0, 5.55);
+      border-radius: 1%;
+    
+    }
+
+    
+    td, th {
+        border: 1px solid #4885d6;
+        text-align: left;
+        padding: 8px;
+        color: #fff;
+    }
+    
+    tr:nth-child(n) {
+        background-color: #332f6b;
+    }
+    /* стили */
+    h1{
+        text-align: center;
+        margin-top: 400px;
+        padding: 8px;
+        color: #fff;
+        background-color: rgb(3, 58, 58);
+        border-radius: 5ch;
+        border: 1px solid #4885d6;
+        
+    }
+
+
+    #list{
+        margin-top: 100px;
+        color: rgb(255, 255, 255);
+        text-align: left;
+        background-color: rgb(3, 58, 58);
+        border-radius: 5ch;
+     
+        border: 1px solid #4885d6;
+   
+        padding: 1%;
+        padding-left: 2%;
+    }
+    ul:hover{
+        background-color: #4885d6;
+    }
+
+    #list:hover{
+        background-color: #4885d6;
+    }
+
+    #click:hover{
+        border-radius: 5ch;
+        background-color: rgb(26, 76, 92);
+    }
+
+  

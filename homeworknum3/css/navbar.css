@@ -1,0 +1,88 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    background-image: url(https://img.freepik.com/premium-photo/front-view-of-elegant-library-with-stairs_360032-1282.jpg?w=2000);
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 50px;
+    padding: 0;
+    width: 25%;
+    background-color: #0c9752;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    z-index: 1;
+}
+
+li a {
+    display: block;
+    color: rgb(245, 245, 245);
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: rgb(20, 39, 30);
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: rgb(54, 221, 143);
+    color: white;
+}
+.content, .oo{
+    margin-left:25%;
+    padding:100px 16px;
+  
+}
+.fixed-header{
+  
+        
+    width: 100%;
+    position: fixed;        
+    background: rgb(15, 99, 64);
+    top: 0;
+    height: 50px;
+    color: #fff;
+}
+.fixed-footer{
+    width: 100%;
+    background: rgb(15, 99, 64);
+    padding: 10px 0;
+    color: #fff;
+    z-index: 9999;
+    position: relative;
+    bottom: 0;
+}
+
+
+nav a{
+    color: rgb(244, 248, 250);
+    text-decoration: none;
+    padding: 10px 50px;
+    display: inline-block;
+}
+#click:hover{
+    border-radius: 5ch;
+    background-color: rgb(54, 221, 143);
+}
+img {
+
+    overflow:hidden;
+
+    width:300px;
+    margin-bottom: 25px;
+
+    height:400px;
+}
+h2,h3{
+    text-align: center;
+    background-color: #0c9752;
+}
+p{
+    color: #fff;
+    float: right;
+    margin: 0;
+}
