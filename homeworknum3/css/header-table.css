@@ -17,6 +17,7 @@ body{
         color: #fff;
     }
  .fixed-footer{
+    text-align: center;
         width: 100%;
         background: #333;
         padding: 10px 0;
